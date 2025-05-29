@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container" id="login">
+        <header>Login</header>
+        <form action="../Controllers/loginController.php" method="post"> <!-- Wrap the form here -->
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email" name="username">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" name="pass">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In" name="signin">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="passwordResetConfirmation_view.html">Forgot password?</a></label>
+                </div>
+            </div>
+            <div class="bottom">
+                <span><h3>Don't have an account? <a href="#" onclick="register()">Sign Up</a></h3></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
