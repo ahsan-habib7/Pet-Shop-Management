@@ -1,0 +1,30 @@
+<form name="dog" id="uploadForm" action="../Controllers/petsController.php" method="POST" style="display: none;">
+    <label for="product_name">Product Name</label>
+    <input type="text" id="product_name" name="product_name" required>
+
+    <label for="price">Price</label>
+    <input type="text" id="price" name="price" required>
+
+    <label for="name_specific">Specific type name with category [Like: <font color="red">Labrador Retriever Dog</font> ]</label>
+    <input type="text" id="name_specific" name="name_specific" required>
+
+    <label for="category">Category</label>
+    <input type="text" id="category" name="category" value="dog" readonly>
+
+    <div class="select-container">
+        <div class="select-wrapper">
+            <label for="name_code">Code name to search</label>
+            <select id="name_code" name="name_code" required>
+                <option value="labrador-retriever">labrador-retriever</option>
+                <option value="golden-retriever">golden-retriever</option>
+                <option value="bulldog">bulldog</option>
+                <option value="poodle">poodle</option>
+                <option value="yorkshire-terrier">yorkshire-terrier</option>
+            </select>
+        </div>
+    </div>
+
+    <label for="productImage">Product Image</label>
+    <input type="file" class="input-field" id="productImage" name="productImage" accept="image/*">
+    <button type="submit" name="add">Submit</button>
+</form>

@@ -1,0 +1,38 @@
+<form name="fishfood" id="uploadForm" action="../Controllers/foodsController.php" method="POST" style="display: none;">
+    <label for="product_name">Product Name</label>
+    <input type="text" id="product_name" name="product_name" required>
+
+    <label for="price">Price</label>
+    <input type="text" id="price" name="price" required>
+
+    <label for="category">Category</label>
+    <input type="text" id="category" name="category" value="fishfood" readonly>
+
+    <label for="name_specific">Specific type name with category [Like: <font color="red">Fish Food</font>]</label>
+    <input type="text" id="name_specific" name="name_specific" required>
+
+    <div class="select-container">
+        <div class="select-wrapper">
+            <label for="type">Food Type</label>
+            <select id="type" name="type" required>
+                <option value="-">-</option>
+                <option value="canned">canned</option>
+                <option value="dry-kibble">dry-kibble</option>
+                <option value="freeze-dried">freeze-dried</option>
+                <option value="high-protein">high-protein</option>
+                <option value="vegan">vegan</option>
+            </select>
+        </div>
+        <div class="select-wrapper">
+            <label for="quality">Food Quality</label>
+            <select id="quality" name="quality" required>
+                <option value="basic">basic</option>
+                <option value="premium">premium</option>
+            </select>
+        </div>
+    </div>
+
+    <label for="product_image">Product Image</label>
+    <input type="file" class="input-field" id="productImage" name="productImage" accept="image/*">
+    <button type="submit" name="add">Submit</button>
+</form>

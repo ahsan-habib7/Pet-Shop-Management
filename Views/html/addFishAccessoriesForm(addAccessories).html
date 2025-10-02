@@ -1,0 +1,37 @@
+<form name="fishaccessories" id="uploadForm" action="../Controllers/accessoriesController.php" method="POST" style="display: none;">
+    <label for="product_name">Product Name</label>
+    <input type="text" id="product_name" name="product_name" required>
+
+    <label for="price">Price</label>
+    <input type="text" id="price" name="price" required>
+
+    <label for="accessoriespettype">accessoriespettype</label>
+    <input type="text" id="accessoriespettype" name="accessoriespettype" value="fish" readonly>
+
+    <div class="select-container">
+        <div class="select-wrapper">
+            <label for="name_specific">Specific type name with category</label>
+            <select id="name_specific" name="name_specific" required>
+                <option value="Fish Training Kit">Fish Training Kit</option>
+                <option value="Fish Wellness Products"> Fish Wellness Products</option>
+                <option value="Fish Beds">Fish Beds</option>
+                <option value="Fish Toys">Fish Toys</option>
+                <option value="Fish Carriers">Fish Carriers</option>
+            </select>
+        </div>
+        <div class="select-wrapper">
+            <label for="accessoriescategory">Category</label>
+            <select id="accessoriescategory" name="accessoriescategory" required>
+                <option value="training-kit">training-kit</option>
+                <option value="wellness-products">wellness-products</option>
+                <option value="beds">beds</option>
+                <option value="toys">toys</option>
+                <option value="carriers">carriers</option>
+            </select>
+        </div>
+    </div>
+
+    <label for="product_image">Product Image</label>
+    <input type="file" class="input-field" id="productImage" name="productImage" accept="image/*">
+    <button type="submit" name="add">Submit</button>
+</form>

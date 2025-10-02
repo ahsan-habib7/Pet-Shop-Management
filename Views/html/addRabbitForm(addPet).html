@@ -1,0 +1,28 @@
+<form name="rabbit" id="uploadForm" action="../Controllers/petsController.php" method="POST" style="display: none;">
+    <label for="product_name">Product Name</label>
+    <input type="text" id="product_name" name="product_name" required>
+
+    <label for="price">Price</label>
+    <input type="text" id="price" name="price" required>
+
+    <label for="name_specific">Specific type name with category [Like: <font color="red">Flemish Giant Rabbit</font> ]</label>
+    <input type="text" id="name_specific" name="name_specific" required>
+
+    <label for="category">Category</label>
+    <input type="text" id="category" name="category" value="rabbit" readonly>
+
+    <div class="select-container">
+        <div class="select-wrapper">
+            <label for="name_code">Code name to search</label>
+            <select id="name_code" name="name_code" required>
+                <option value="flemish-giant">flemish-giant</option>
+                <option value="mini-rex">mini-rex</option>
+            </select>
+        </div>
+    </div>
+
+    <label for="productImage">Product Image</label>
+    <input type="file" class="input-field" id="productImage" name="productImage" accept="image/*">
+
+    <button type="submit" name="add">Submit</button>
+</form>
