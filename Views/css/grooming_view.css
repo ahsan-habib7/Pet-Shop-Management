@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+.grooming{
+    margin-top: 5rem;
+}
+
+.grooming-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grooming-container h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    color: #0066cc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grooming-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #666;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grooming-services-list h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #0066cc;
+    text-align: center;
+}
+
+.grooming-services-list form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #555;
+}
+.grooming-services-list input[type="checkbox"] {
+    width: auto; /* Fix the width issue */
+    margin-right: 10px;
+}
+
+
+/* Unique label styles for grooming services list */
+.grooming-service-label {
+    background: #fff;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.grooming-service-label:hover {
+    transform: translateY(-5px);
+    background-color: #f0f8ff;
+}
+
+.grooming-services-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.grooming-booking-summary {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grooming-booking-summary h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+.grooming-booking-summary p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#grooming-book-now {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+#grooming-book-now:hover {
+    background-color: #004da3;
+}
+
+.grooming-booking-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    display: none; /* Initially hidden */
+}
+
+.grooming-booking-form h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0066cc;
+    text-align: center;
+}
+
+.grooming-booking-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grooming-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Unique label styles for booking form */
+.grooming-form-label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.grooming-booking-form input,
+.grooming-booking-form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.grooming-booking-form input:focus,
+.grooming-booking-form textarea:focus {
+    border-color: #0066cc;
+}
+
+.grooming-booking-form button {
+    grid-column: span 2;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.grooming-booking-form button:hover {
+    background-color: #004da3;
+}
+
+@media (max-width: 768px) {
+    .grooming-services-list form {
+        flex-direction: column;
+    }
+
+    .grooming-booking-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .grooming-booking-form button {
+        grid-column: span 1;
+    }
+}

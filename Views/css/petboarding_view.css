@@ -1,0 +1,185 @@
+.petboarding {
+    text-align: center;
+    padding: 50px;
+    margin-top: -75px;
+    margin-bottom: -75px;
+}
+
+.petboarding h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    color: #0066cc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.petboarding h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.petboarding h1 span {
+    color: #ff7c41;
+}
+
+.petboarding-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-header {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header h2 {
+    color: #ff7c41;
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-header p {
+    margin: 10px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.card-header p span {
+    font-size: 40px;
+}
+
+.features {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.features li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.petboarding-cards button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7c41;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.petboarding-cards button:hover {
+    background-color: #e56b2c;
+}
+
+#bookingform {
+    display: none;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+#bookingform h2 {
+    color: #ff7c41;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#bookingform label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#bookingform select, #bookingform input, #bookingform textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+    background-color: #f9f9f9;
+}
+
+#bookingform select:focus, #bookingform input:focus, #bookingform textarea:focus {
+    border-color: #ff7c41;
+    box-shadow: 0 0 8px rgba(255, 124, 65, 0.3);
+    outline: none;
+}
+
+#bookingform button[type="submit"] {
+    width: 100% ;
+    padding: 15px;
+    background-color: #ff7c41;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#bookingform button[type="submit"]:hover {
+    background-color: #e56b2c;
+}
+
+#bookingform input[type="text"], 
+#bookingform input[type="tel"], 
+#bookingform textarea, 
+#bookingform select {
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+#bookingform input[type="text"]:focus, 
+#bookingform input[type="tel"]:focus, 
+#bookingform textarea:focus, 
+#bookingform select:focus {
+    border-color: #ff7c41;
+    box-shadow: 0 0 10px rgba(255, 124, 65, 0.2);
+    background: #fff;
+}
+
+#bookingform input::placeholder,
+#bookingform textarea::placeholder {
+    color: #aaa;
+}

@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.training {
+    padding: 50px;
+    text-align: center;
+    margin-top: -35px;
+}
+.training h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    color: #0066cc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.training h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.training h1 span {
+    color: #ff7c41;
+}
+
+.training-plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h2 {
+    color: #ff7c41;
+    margin: 0;
+    font-size: 24px;
+}
+
+.plan p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+}
+
+.plan button {
+    background-color: #ff7c41;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.plan button:hover {
+    background-color: #e56b2c;
+}
+
+.testimonials {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    color: #ff7c41;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #ff7c41;
+}
+
+.schedule {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule h2 {
+    font-size: 28px;
+    color: #ff7c41;
+    margin-bottom: 20px;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule th, .schedule td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: #ff7c41;
+    color: #fff;
+}
+
+.schedule td {
+    background-color: #f9f9f9;
+}
+
+/* Styling for the form */
+#bookingForm {
+    display: none;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+#bookingForm h2 {
+    color: #ff7c41;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#bookingForm label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#bookingForm select, #bookingForm input, #bookingForm textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+    background-color: #f9f9f9;
+}
+
+#bookingForm select:focus, #bookingForm input:focus, #bookingForm textarea:focus {
+    border-color: #ff7c41;
+    box-shadow: 0 0 8px rgba(255, 124, 65, 0.3);
+    outline: none;
+}
+
+#bookingForm button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7c41;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#bookingForm button[type="submit"]:hover {
+    background-color: #e56b2c;
+}

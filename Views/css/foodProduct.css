@@ -1,0 +1,216 @@
+.foodbanner {
+    width: 100%;
+    height: 350px; 
+    overflow: hidden;
+    background-color: #FF9800;
+    position: relative;
+}
+
+.foodbanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.foodbanner .foodbanner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 20px; 
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin: 20px auto; 
+    width: 95%; 
+}
+
+.filter-section {
+    width: 18%; 
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-right: 15px; 
+}
+
+.filter-section h2 {
+    font-size: 20px; 
+    color: #007bff;
+    margin-bottom: 15px; 
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.filter-section input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px; 
+}
+
+.catalog-section {
+    width: 80%; 
+}
+
+.catalog-section h2 {
+    font-size: 24px; 
+    color: #333;
+    margin-bottom: 15px; 
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 15px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Scales the image to cover the entire area without distortion */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+
+.product h3 {
+    font-size: 18px; /* Reduced font size */
+    color: #007bff;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.product p {
+    font-size: 16px; /* Reduced font size */
+    color: #555;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 20px; /* Reduced padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.price-range {
+    margin-top: 15px; /* Reduced margin */
+}
+
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px; /* Reduced margin */
+    font-size: 12px; /* Reduced font size */
+    color: #555;
+}
+
+.price-range h3 {
+    font-size: 20px; /* Reduced font size */
+    color: #007bff;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.price-range input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ddd;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.search-bar input[type="text"] {
+    width: 50%; /* Slightly smaller */
+    padding: 12px 8px; /* Reduced padding */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px; /* Reduced font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 50%; /* Slightly smaller */
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 8px; /* Reduced padding */
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.wishlist-icon-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: #F5F5F5; /* Circle background color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.wishlist-icon-container:hover {
+    transform: scale(1.2);
+}
+
+.wishlist-icon {
+    font-size: 22px; /* Increased icon size */
+    color: #007BFF; /* Icon color */
+}
